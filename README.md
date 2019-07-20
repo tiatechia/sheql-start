@@ -6,9 +6,13 @@ Use the [sinatra-app](https://github.com/Gmfholley/sinatra-app) walk throughs as
 
 1. Log into GitHub and fork this repo to your own account.
 1. Click the clone or download link and copy the ssh clone name.  (Toggle between https and ssh until you see Clone with ssh indicator.)
-1. Log into Cloud 9.
-1. In the root of your Cloud 9 workspace, open a terminal window and type `git clone ` and then paste the name of the repo you copied.  It might look like `git clone git@github.com:Gmfholley/sheql-start.git`.
+1. In a folder on your computer, open the Windows command prompt and type `git clone ` and then paste the name of the repo you copied.  It might look like `git clone git@github.com:Gmfholley/sheql-start.git`.
 1. Change your directory into the folder you just made: `cd sheql-start`.
+1. At the prompt type `ruby --version ` to ensure Ruby is installed.
+    1. If you get an error that states Ruby is not found, you will need to [install Ruby](https://rubyinstaller.org/downloads/). You must be an administrator on the computer to install Ruby. In general, download the recommeded Ruby version on the page. Once installed, reopen your command prompt.
+1. Type `gem install bundler` to install the Ruby bundler gem.
+1. Type `bundle install` to install all the gems for this repo.
+    1. If you get a message regarding updating bundler or another gem, run the command given to you for upgrading, e.g.: `bundle update --bundler`.
 1. `bundle install` to install all the files for this repo.
 1. `sudo service postgresql start` to start postgres.
 
